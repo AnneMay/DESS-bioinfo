@@ -1,7 +1,7 @@
-#interpreteur
+#! /usr/bin/python3
 
 """
-Nom: Détecteur années bisextiles, exemple cours 4 
+Nom: Détecteur années bisextiles, exemple cours 4
 Auteur: Anne-Marie Roy
 Date: 2019-09-24
 """
