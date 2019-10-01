@@ -12,20 +12,22 @@ Date: Automne 2019
 ## Importations : Aucune
 
 ##Variables et validations
-
+message_adn = "Veillez saisir une sequence d'ADN valide: "
+message_motif = "Veuillez entre la longueur de motif désiré: "
 #Séquence d'ADN
-seq_adn = input("Veillez saisir une sequence d'ADN valide: ")
-seq_adn = seq_adn.lower()
+seq_adn = "0"
 len_adn = len(seq_adn)
+seq_count = seq_adn.count ("a") + seq_adn.count("g") + seq_adn.count("t") + seq_adn.count("c")
 #Validation de l'input:
-n = 1
+n = 0
 while n < 3:
-    if seq_adn.count ("a") + seq_adn.count("g") + seq_adn.count("t") + seq_adn.count("c") != len_adn:
-        print("La séquence n'est pas valide")
-        seq_adn = input("Veillez saisir une sequence d'ADN valide: ")
+    if seq_count != len_adn:
+        #print("La séquence n'est pas valide")
+        seq_adn = input(message_adn)
         seq_adn = seq_adn.lower()
+        len_adn = len(seq_adn)
     n += 1
-if seq_adn.count ("a") + seq_adn.count("g") + seq_adn.count("t") + seq_adn.count("c") != len_adn:
+if seq_count != len_adn:
 	print("Fin impromptue du script. La sequence n'est pas valide.")
 else:
     print("La séquence est valide.")
