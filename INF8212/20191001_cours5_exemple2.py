@@ -24,6 +24,6 @@ for elt in maListe:
 i = 0
 while i < len(maListe):
     print(elt, end=" ")
-    i = i + 1 
+    i = i + 1
 
 print("Fin normale du script")
