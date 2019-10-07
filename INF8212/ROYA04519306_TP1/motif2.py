@@ -26,20 +26,20 @@ while n < 3:
         seq_adn = input(message_adn)
         seq_adn = seq_adn.lower()
     n += 1
-if seq_count == len_adn:
-	print("La séquence est valide.")
+if seq_count != len_adn:
+	print("Fin impromptue du script. La sequence n'est pas valide.")
 else:
-    print("Fin impromptue du script. La sequence n'est pas valide.")
+    print("La séquence est valide.")
 #Validation de l'input - Motif:
     n = 0
     while n < 3:
         if valMotif <= 0 or valMotif > len_adn:
             valMotif = int(input(message_motif))
             n += 1
-    if valMotif > 0 and valMotif <= len_adn:
-        print("La longueur de motif est valide.")
-    else:
+      if valMotif < 0 or valMotif > len_adn:
         print("Fin impromptue du script. La longueur du motif n'est pas valide.")
+    else:
+        print("La longueur de motif est valide.")
 
 ### Boucle de détection des motifs présents dans la séquence
         n = valMotif #Utilisé pour copier puis manipuler la valeur associé au motif
