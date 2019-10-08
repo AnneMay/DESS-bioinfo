@@ -35,8 +35,8 @@ else:
     while n < 3:
         if valMotif <= 0 or valMotif > len_adn:
             valMotif = int(input(message_motif))
-            n += 1
-      if valMotif < 0 or valMotif > len_adn:
+        n += 1
+    if valMotif <= 0 or valMotif > len_adn:
         print("Fin impromptue du script. La longueur du motif n'est pas valide.")
     else:
         print("La longueur de motif est valide.")
