@@ -41,3 +41,29 @@ Défis envisagés:
  lower() #Permet de transformer une chaine de caractère en minuscules
  len() #Permet de renvoyer la longueur d'une liste ou d'une chaine de caractère
  ? quit() #Permet de quitter l'environnement python
+
+TEST: 
+Majuscule: 
+ATCG; 2
+Solution: 
+at = 1 
+tc = 1
+cg = 1 
+
+répétition de motifs: 
+atatcg; 2 
+at = 2 
+ta = 1
+tc = 1
+cg = 1 
+
+Limite séq:
+aaba; cool; idée
+séq. invalide 
+
+limite motif: 
+atcg; 0, 5, -1
+invalide 
+atcg; 4 
+atcg = 1 
+
