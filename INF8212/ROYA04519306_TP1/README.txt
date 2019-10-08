@@ -19,8 +19,10 @@ sous-objectifs
     a) uiliser les index pour itérer dans la séquence et extraire les motifs.
     b) les stocker dans une liste pour ensuite itérer dans la liste
       PROBLÈME: Utilise la fonction append() qui ne fait pas partie des fonctions permises
-	SOLUTION: synthaxe List += [] #permet d'ajouter des éléments à une liste
+	SOLUTION: synthaxe List += [] #permet d'ajouter des éléments à la fin d'une liste
     c) ? Doublons ?
+    SOLUTION: Boucle qui vérifie si le motif créer existe déjà dans la liste
+              S'exécute avant d'ajouter les motifs à la liste
 5- Itérer sur chaque motifs et compter le nombre d'occurence, Présenter les résultats à l'écran
     a) ne pas présenter les motifs sans occurences
 
@@ -42,28 +44,27 @@ Défis envisagés:
  len() #Permet de renvoyer la longueur d'une liste ou d'une chaine de caractère
  ? quit() #Permet de quitter l'environnement python
 
-TEST: 
-Majuscule: 
+TEST:
+Majuscule:
 ATCG; 2
-Solution: 
-at = 1 
+Solution:
+at = 1
 tc = 1
-cg = 1 
+cg = 1
 
-répétition de motifs: 
-atatcg; 2 
-at = 2 
+répétition de motifs:
+atatcg; 2
+at = 2
 ta = 1
 tc = 1
-cg = 1 
+cg = 1
 
-Limite séq:
+Cas limite séq:
 aaba; cool; idée
-séq. invalide 
+séq. invalide
 
-limite motif: 
+Cas limite motif:
 atcg; 0, 5, -1
-invalide 
-atcg; 4 
-atcg = 1 
-
+invalide
+atcg; 4
+atcg = 1

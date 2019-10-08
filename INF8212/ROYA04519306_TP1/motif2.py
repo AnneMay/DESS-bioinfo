@@ -44,7 +44,7 @@ else:
 ### Boucle de détection des motifs présents dans la séquence
         n = valMotif #Utilisé pour copier puis manipuler la valeur associé au motif
         fin = (len_adn - valMotif) + 1 # +1 pour inclure la valeur de (len_adn - valMotif)
-        ListMotif = list()
+        ListMotif = []
         for i in range(0, fin):
             a = seq_adn[i:n]
             n += 1
