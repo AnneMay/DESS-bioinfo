@@ -2,6 +2,7 @@
 
 motif.py #Programme avec utilisation de la fonction quit()
 motif2.py #Programme sans l'ulisation de la fonction quit()
+motif3.py #Programme avec les dictionnaires (avec quit())
 
 BUT: d’indiquer le nombre de fois qu’apparait chaque motif (sous-séquence)
 d’une taille donnée pour une séquence biologique (ADN) valide.
