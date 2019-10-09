@@ -14,6 +14,7 @@ Date: Automne 2019
 ### Variables et validations
 message_adn = "Veillez saisir une sequence d'ADN valide: "
 message_motif = "Veuillez entre la longueur de motif désirée: "
+message_fin = "Fin impromptue du script. La sequence ou le motif ne sont pas valides."
 #initialisation des variables
 seq_adn = "0"
 valMotif = -1
@@ -29,7 +30,7 @@ while n < 3:
 if seq_count == len_adn:
 	print("La séquence est valide.")
 else:
-    print("Fin impromptue du script. La sequence n'est pas valide.")
+    print(message_fin)
     quit()
 #Validation de l'input - Motif:
 n = 0
@@ -40,7 +41,7 @@ while n < 3:
 if valMotif > 0 and valMotif <= len_adn:
     print("La longueur de motif est valide.")
 else:
-    print("Fin impromptue du script. La longueur du motif n'est pas valide.")
+    print(message_fin)
     quit()
 
 ### Boucle de détection des motifs présents dans la séquence
