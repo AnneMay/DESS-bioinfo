@@ -18,29 +18,32 @@ message_fin = "Fin impromptue du script. La sequence ou le motif ne sont pas val
 #initialisation des variables
 seq_adn = "0"
 valMotif = -1
-#Validation de l'input:
+#Validation de l'input - Séquence:
+erreur = False
 n = 0
-while n < 3:
+while not erreur and n < 3:
     len_adn = len(seq_adn)
     seq_count = seq_adn.count ("a") + seq_adn.count("g") + seq_adn.count("t") + seq_adn.count("c")
-    if seq_count != len_adn:
-        seq_adn = input(message_adn)
-        seq_adn = seq_adn.lower()
+    if n == 3: #3 essai (0, 1, 2), incrémentation en dehors de la condition
+        erreur = True
+    elif seq_count != len_adn:
+            seq_adn = input(message_adn)
+            seq_adn = seq_adn.lower()
     n += 1
-if seq_count == len_adn:
-	print("La séquence est valide.")
-else:
+if erreur:
     print(message_fin)
     quit()
+
 #Validation de l'input - Motif:
+erreur = False
 n = 0
-while n < 3:
-    if valMotif <= 0 or valMotif > len_adn:
+while not erreur and n < 3:
+    if n == 3: #3 essai (0, 1, 2), incrémentation en dehors de la condition
+        erreur = True
+    elif valMotif <= 0 or valMotif > len_adn:
         valMotif = int(input(message_motif))
     n += 1
-if valMotif > 0 and valMotif <= len_adn:
-    print("La longueur de motif est valide.")
-else:
+if erreur:
     print(message_fin)
     quit()
 

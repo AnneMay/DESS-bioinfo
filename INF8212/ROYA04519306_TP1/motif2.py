@@ -26,6 +26,9 @@ while n < 3:
         seq_adn = input(message_adn)
         seq_adn = seq_adn.lower()
     n += 1
+    
+len_adn = len(seq_adn)
+seq_count = seq_adn.count ("a") + seq_adn.count("g") + seq_adn.count("t") + seq_adn.count("c")
 if seq_count != len_adn:
 	print("Fin impromptue du script. La sequence n'est pas valide.")
 else:

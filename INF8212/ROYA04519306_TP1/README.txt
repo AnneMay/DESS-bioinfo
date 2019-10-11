@@ -69,3 +69,11 @@ atcg; 0, 5, -1
 invalide
 atcg; 4
 atcg = 1
+
+Cas limite 1er mauvais, 2e bon
+cool, ATCG; 2
+atcg; 5, 2
+
+Cas limite 1er et 2e mauvais, 3e bon
+cool, idee, ATCG; 2
+atcg; 5, -1, 2
