@@ -32,38 +32,38 @@ while not erreur and n < 3:
     n += 1
 if erreur:
     print(message_fin)
-    quit()
+else:
 
 #Validation de l'input - Motif:
-erreur = False
-n = 0
-while not erreur and n < 3:
-    if n == 3: #3 essai (0, 1, 2), incrémentation en dehors de la condition
-        erreur = True
-    elif valMotif <= 0 or valMotif > len_adn:
-        valMotif = int(input(message_motif))
-    n += 1
-if erreur:
-    print(message_fin)
-    quit()
+    erreur = False
+    n = 0
+    while not erreur and n < 3:
+        if n == 3: #3 essai (0, 1, 2), incrémentation en dehors de la condition
+            erreur = True
+        elif valMotif <= 0 or valMotif > len_adn:
+            valMotif = int(input(message_motif))
+        n += 1
+    if erreur:
+        print(message_fin)
+    else:
 
 ###Boucle de détection des motifs
-dict = {}
-n = valMotif #Utilisé pour copier puis manipuler la valeur associé au motif
-fin = (len_adn - valMotif) + 1 # +1 pour inclure la valeur de (len_adn - valMotif)
-ListMotif = []
-for i in range(0, fin):
-    a = seq_adn[i:n]
-    n += 1
+        dict = {}
+        n = valMotif #Utilisé pour copier puis manipuler la valeur associé au motif
+        fin = (len_adn - valMotif) + 1 # +1 pour inclure la valeur de (len_adn - valMotif)
+        ListMotif = []
+        for i in range(0, fin):
+            a = seq_adn[i:n]
+            n += 1
 #Validation de motif unique et insertion dans le dictionnaire
-    if a in dict:
-        dict[a] += 1
-    else:
-        dict[a] = 1
+            if a in dict:
+                dict[a] += 1
+            else:
+                dict[a] = 1
 
 ###Affichage des résultats
-for cle,valeur in dict.items():
-    print(cle, "=", valeur)
+        for cle,valeur in dict.items():
+            print(cle, "=", valeur)
 
 ###Indique la fin du script.
-print("Fin du script")
+        print("Fin du script")

@@ -1,0 +1,7 @@
+6 4
+seq1 atcg
+seq2 ACGT
+seq3 CCAG
+seq4 TTGC
+seq5 ACAG
+seq6 ACTT

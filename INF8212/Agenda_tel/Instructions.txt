@@ -1,0 +1,24 @@
+1) Structure de donnée:
+_nom
+_prénom
+_téléphone
+
+Ce qui se traduit en python par une liste ou un dictionnaire (agenda) de dictionnaires (contact)
+exemple: agenda[0]["nom"] retourne le nom du premier contact.
+Équivalent à contact = agenda[0] suivi de print(contact["nom"])
+
+2) Service à fournir:
+  a) Ajouter un contact
+    1- demander les infos
+    2- ajouter dans un dictionnaire puis dans la liste
+  b) Recherche de contact
+    1- saisir la chaine à chercher
+    2- afficher toutes les entrées qui contiennent la chaine
+  c) Affichage de tous les contacts
+    1- Boucle avec numéro qui affiche un index pour chaque contact
+  d) Suprimer un contacts
+    1- Recevoir la position
+    2- faire la suppression
+  e) quitter
+
+3) Créer un menu pour interagir avec l'utilisateur / présenter les choix possibles
