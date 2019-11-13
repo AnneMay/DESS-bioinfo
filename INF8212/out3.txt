@@ -1,7 +1,21 @@
-6 4
-seq1 atcg
-seq2 ACGT
-seq3 CCAG
-seq4 TTGC
-seq5 ACAG
-seq6 ACTT
+('atcg', 'atcg') 0
+('atcg', 'ACGT') 2
+('atcg', 'CCAG') 3
+('atcg', 'TTGC') 3
+('atcg', 'ACAG') 2
+('atcg', 'ACTT') 3
+('ACGT', 'ACGT') 0
+('ACGT', 'CCAG') 3
+('ACGT', 'TTGC') 3
+('ACGT', 'ACAG') 2
+('ACGT', 'ACTT') 1
+('CCAG', 'CCAG') 0
+('CCAG', 'TTGC') 4
+('CCAG', 'ACAG') 1
+('CCAG', 'ACTT') 3
+('TTGC', 'TTGC') 0
+('TTGC', 'ACAG') 4
+('TTGC', 'ACTT') 4
+('ACAG', 'ACAG') 0
+('ACAG', 'ACTT') 2
+('ACTT', 'ACTT') 0
